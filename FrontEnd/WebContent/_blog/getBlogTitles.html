@@ -7,9 +7,10 @@
 <body>
 
 <div class="table-responsive" ng-show="currentUser.role=='Admin'">
-List of Blog Posts waiting for approval
+<p style="color:violet;font-size:20px;font-family:Lucida Sans Unicode">LIST OF BLOG POSTS WAITING FOR APPROVAL</p>
+
 <table class="table">
-<tr><th>Recent Posts</th></tr>
+<tr><th style="color:blue;font-size:20px;font-family:Lucida Sans Unicode">Recent Posts</th></tr>
 <tr ng-repeat="blogPost in postsForApproval | orderBy:'time':true">
 
 <td><a href="#getBlogForApproval/{{blogPost.id}}">{{blogPost.title}}</a></td>
@@ -21,9 +22,10 @@ List of Blog Posts waiting for approval
 </div>
 
 <div class="table-responsive">
-List of Blog Posts 
+<p style="color:violet;font-size:20px;font-family:Lucida Sans Unicode">LIST OF BLOG POSTS</p>>
+ 
 <table class="table">
-<tr><th>Recent Posts</th></tr>
+<tr><th style="color:blue;font-size:20px;font-family:Lucida Sans Unicode">Recent Posts</th></tr>
 <tr ng-repeat="blogPost in blogPosts | orderBy:'time':true">
 
 <td><a href="#getBlogDetail/{{blogPost.id}}">{{blogPost.title}}</a></td>

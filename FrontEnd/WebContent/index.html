@@ -17,7 +17,7 @@
 </head>
 <body ng-app="app">
 <header>
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-light" style="background-color:#0000ff">
             
            <div class="container-fluid">
 		<button type="button" class="navbar-toggle collapsed" 
@@ -28,25 +28,25 @@
         <span class="icon-bar"></span>
       </button>
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/">NIIT</a>
+                    <a class="navbar-brand" style="color:orange;font-size:30px;font-family:Lucida Sans Unicode" href="/">NIIT</a>
                 </div>
 <div class="collapse navbar-collapse" id="collapse-example">
                 <ul class="nav navbar-nav ">
-                    <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href=""><i class="fa fa-shield"></i> About Us</a></li>
-                    <li><a href="#register" ng-hide="currentUser.username">Register</a></li>
-                    <li><a href="#login" ng-hide="currentUser.username">Sign in</a>
-                    <li><a href="" ng-show="currentUser.username">Welcome {{currentUser.username}}</a>
-                    <li><a href="#profilepic" ng-show="currentUser.username"><img src="http://localhost:8081/ProjectBackEnd/getimage/{{currentUser.username}}" alt="upload Picture" width="30px" height="30px" class="img-rounded"></a></li>
-                    <li><a href="#edituser" ng-show="currentUser.username"><span class="glyphicon glyphicon-user"></span>Edit Profile</a></li>
+                    <li><a style="color:white;font-size:18px;font-family:Lucida Sans Unicode" href="#home"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a style="color:white;font-size:18px;font-family:Lucida Sans Unicode" href=""><i class="fa fa-shield"></i> About Us</a></li>
+                    <li><a style="color:white;font-size:18px;font-family:Lucida Sans Unicode" href="#register" ng-hide="currentUser.username">Register</a></li>
+                    <li><a style="color:white;font-size:18px;font-family:Lucida Sans Unicode" href="#login" ng-hide="currentUser.username">Sign in</a>
+                    <li><a style="color:white;font-size:18px;font-family:Lucida Sans Unicode" href="" ng-show="currentUser.username">Welcome {{currentUser.username}}</a>
+                    <li><a style="color:white;font-size:18px;font-family:Lucida Sans Unicode" href="#profilepic" ng-show="currentUser.username"><img src="http://localhost:8081/ProjectBackEnd/getimage/{{currentUser.username}}" alt="upload Picture" width="30px" height="30px" class="img-rounded"></a></li>
+                    <li><a style="color:white;font-size:18px;font-family:Lucida Sans Unicode" href="#edituser" ng-show="currentUser.username"><span class="glyphicon glyphicon-user"></span>Edit Profile</a></li>
                    
                    
-                   <li class="dropdown"><a href="" class="dropdown-toggle"
+                   <li class="dropdown"><a style="color:white;font-size:18px;font-family:Lucida Sans Unicode" href="" class="dropdown-toggle"
 						data-toggle="dropdown" ng-show="currentUser.username"> Job details<b
 							class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="#/getAllJobs"> View Job</a></li>
-							<li><a href="#/addJob" ng-show="currentUser.role=='Admin'">Post
+							<li><a style="color:black;font-size:15px;font-family:Lucida Sans Unicode" href="#/getAllJobs"> View Job</a></li>
+							<li><a style="color:black;font-size:15px;font-family:Lucida Sans Unicode" href="#/addJob" ng-show="currentUser.role=='Admin'">Post
 									Job</a></li>
 						</ul></li>
                  
@@ -65,29 +65,29 @@
                    <li><a href="#getAllJobs" ng-show="currentUser.username">Get All Jobs</a></li>
                    <li><a href="#addJob" ng-show="currentUser.role=='Admin'">Post new job</a></li>
                    -->
-                   <li class="dropdown"><a href="" class="dropdown-toggle"
+                   <li class="dropdown"><a style="color:white;font-size:18px;font-family:Lucida Sans Unicode" href="" class="dropdown-toggle"
 						data-toggle="dropdown" ng-show="currentUser.username"> Blog <b
 							class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="#/getAllBlogs">view all blogs</a></li>
-							<li><a href="#addPost">Post
+							<li><a style="color:black;font-size:15px;font-family:Lucida Sans Unicode" href="#/getAllBlogs">view all blogs</a></li>
+							<li><a style="color:black;font-size:15px;font-family:Lucida Sans Unicode" href="#addPost">Post
 									Blog</a></li>
 						</ul></li>
 						
-				<li class="dropdown"><a href="" class="dropdown-toggle"
+				<li class="dropdown"><a style="color:white;font-size:18px;font-family:Lucida Sans Unicode" href="" class="dropdown-toggle"
 						data-toggle="dropdown" ng-show="currentUser.username"> Friend  <b
 							class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="#/getAllUsers">Suggesion List</a></li>
-							<li><a href="#/friendlist">Friends List</a></li>
-							<li><a href="#pendingRequests">Pending Requests</a></li>
+							<li><a style="color:black;font-size:15px;font-family:Lucida Sans Unicode" href="#/getAllUsers">Suggesion List</a></li>
+							<li><a style="color:black;font-size:15px;font-family:Lucida Sans Unicode" href="#/friendlist">Friends List</a></li>
+							<li><a style="color:black;font-size:15px;font-family:Lucida Sans Unicode" href="#pendingRequests">Pending Requests</a></li>
 						</ul></li>		
 						
 						
                    <!--  
                   <li><a href="#addPost" ng-show="currentUser.username">Add Blog Post </a></li>
                   <li><a href="#getAllBlogs" ng-show="currentUser.username">View All Blogs</a></li>-->
-                    <li><a href="" ng-click="logout()" ng-show="currentUser.username">logout</a></li>
+                    <li><a style="color:white;font-size:18px;font-family:Lucida Sans Unicode" href="" ng-click="logout()" ng-show="currentUser.username">logout</a></li>
                     
                 </ul>
             </div>
